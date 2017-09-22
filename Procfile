@@ -1,1 +1,1 @@
-web:java -Dserver.port=$PORT $JAVA_OPTS -jar target/*.jar
+web:java -Dserver.port=$PORT $JAVA_OPTS -jar angular4spring-server/0.0.1-SNAPSHOT/angular4spring-server-0.0.1-SNAPSHOT.war
