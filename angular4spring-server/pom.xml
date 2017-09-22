@@ -25,11 +25,11 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
+		<!--dependency>
 			<groupId>com.thiagolvlsantos</groupId>
 			<artifactId>angular4spring-client</artifactId>
 			<version>${project.version}</version>
-		</dependency>
+		</dependency-->
 		<!--dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
