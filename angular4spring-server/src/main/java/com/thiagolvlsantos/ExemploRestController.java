@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController("/angular4spring")
 public class ExemploRestController {
 
-	@RequestMapping("/echo")
+	@RequestMapping(path = "/echo")
 	public String echo(@PathVariable(name = "msg") String msg) {
 		return "Echo: ..." + msg;
 	}
