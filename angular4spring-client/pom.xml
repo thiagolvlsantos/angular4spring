@@ -53,8 +53,6 @@
 							<arguments>
 								<argument>build</argument>
 								<argument>--prod</argument>
-								<argument>--base-href</argument>
-								<argument>"/angular4spring-client/"</argument>
 							</arguments>
 						</configuration>
 						<phase>generate-resources</phase>
