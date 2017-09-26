@@ -6,9 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @CrossOrigin
 @RestController
@@ -23,10 +21,16 @@ public class EchoController {
 	}
 
 	@Data
-	@NoArgsConstructor
-	@AllArgsConstructor
 	public static class Message {
 		private int id;
 		private String msg;
+
+		public Message() {
+		}
+
+		public Message(int id, String msg) {
+			this.id = id;
+			this.msg = msg;
+		}
 	}
 }
