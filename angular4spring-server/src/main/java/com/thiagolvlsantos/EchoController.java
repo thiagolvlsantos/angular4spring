@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -20,11 +19,10 @@ public class EchoController {
 
 	@RequestMapping
 	public ResponseEntity<Message> echo(@RequestParam(name = "msg", defaultValue = "type something") String msg) {
-		return ResponseEntity.ok(Message.builder().id(serial++).msg(msg.toUpperCase()).build());
+		return ResponseEntity.ok(new Message(serial++, msg.toUpperCase()));
 	}
 
 	@Data
-	@Builder
 	@NoArgsConstructor
 	@AllArgsConstructor
 	public static class Message {
