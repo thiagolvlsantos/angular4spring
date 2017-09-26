@@ -29,7 +29,7 @@
     </issueManagement>
 
     <modules>
-		<!--module>angular4spring-client</module-->
+		<module>angular4spring-client</module>
         <module>angular4spring-server</module>
     </modules>
 

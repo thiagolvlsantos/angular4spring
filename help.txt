@@ -1,0 +1,6 @@
+To add build applications
+	heroku buildpacks:add heroku/nodejs
+	heroku buildpacks:add heroku/java
+
+To build:
+	git push heroku master
