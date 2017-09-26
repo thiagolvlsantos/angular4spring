@@ -14,7 +14,7 @@ export class AppComponent {
 
   send() {
     if (location) {
-      this.http.get("http://localhost:8080/echo?msg=" + this.location).subscribe((res) => {
+      this.http.get("/echo?msg=" + this.location).subscribe((res) => {
         console.log(res);
         this.result = res.json()
       })
